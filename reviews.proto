@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Review {
+    string name = 1 ;
+    string relative_publish_time_description = 2;
+    int32 rating = 3;
+    string text = 4;
+    string publish_time = 5;
+}
+
+message Reviews {
+    repeated Review reviews = 1;
+}
